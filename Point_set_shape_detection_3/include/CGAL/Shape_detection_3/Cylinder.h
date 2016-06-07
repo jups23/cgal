@@ -74,6 +74,13 @@ namespace CGAL {
       return m_radius;
     }
 
+    /*!
+      Point constructed on axis of the cylinder.
+     */
+    Point_3 center() const {
+      return this->constr_point_on(m_axis);;
+    }
+
     /// \cond SKIP_IN_MANUAL
 
     /*!
